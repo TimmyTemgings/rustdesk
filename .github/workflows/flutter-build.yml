@@ -391,7 +391,7 @@ jobs:
 
   build-for-macOS-arm64-selfhost:
     # use build-for-macOS instead
-    if: false
+    #if: true
     runs-on: [macOS, ARM64, macos-latest]
     needs: [generate-bridge]
     steps:
