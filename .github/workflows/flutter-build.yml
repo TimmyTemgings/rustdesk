@@ -392,7 +392,7 @@ jobs:
   build-for-macOS-arm64-selfhost:
     # use build-for-macOS instead
     if: false
-    runs-on: [self-hosted, macOS, ARM64]
+    runs-on: [self-hosted, macOS, ARM64, macos-latest]
     needs: [generate-bridge]
     steps:
       - name: Export GitHub Actions cache environment variables
