@@ -414,8 +414,8 @@ jobs:
 
       - name: Build rustdesk
         run: |
-          export RUST_BACKTRACE=full
-          export CARGO_PROFILE_RELEASE_BUILD_OVERRIDE_DEBUG=true
+          # export RUST_BACKTRACE=full
+          # xport CARGO_PROFILE_RELEASE_BUILD_OVERRIDE_DEBUG=true
           ./build.py --flutter --hwcodec
 
       - name: create unsigned dmg
