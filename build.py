@@ -404,7 +404,6 @@ def build_flutter_dmg(version, features):
     if not skip_cargo:
         # set minimum osx build target, now is 10.14, which is the same as the flutter xcode project
         system2(
-            #f'MACOSX_DEPLOYMENT_TARGET=10.14 cargo build --features {features} --lib --release')
             f'export MACOSX_DEPLOYMENT_TARGET=10.14 && RUSTFLAGS="-C link-arg=-v" cargo build --verbose --features {features} --lib --release')
     # copy dylib
     system2(
